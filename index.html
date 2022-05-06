@@ -41,13 +41,13 @@
                 <!--Edades de pasajeros-->
                 <div class="accordion-item rounded-0">
                     <h2 class="accordion-header bg-dark" id="headingOne">
-                        <button class="accordion-button rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Gráfico 1</button>
+                        <button class="accordion-button rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Victimas por asesino</button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body text-black-50">
                             <p>Gráfico 1</p>
                             <div class="col-md-6 mx-auto mb-3">
-                                <canvas id="edadista" width="100" height="100"></canvas>
+                                <canvas id="victimas" width="100" height="100"></canvas>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                 <!--Pasajeras y pasajeros-->
                 <div class="accordion-item rounded-0">
                     <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Gráfico 2</button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Asesinos por país</button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body text-black-50">
@@ -69,13 +69,13 @@
                 <!--Clases-->
                 <div class="accordion-item rounded-0">
                     <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Gráfico 3</button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Asesinos por género</button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="accordion-body text-black-50">
                             <p>Gráfico 3</p>
                             <div class="col-md-6 mx-auto mb-3">
-                                <canvas id="clasista" width="100" height="100"></canvas>
+                                <canvas id="genero" width="100" height="100"></canvas>
                             </div>
                         </div>
                     </div>
@@ -83,49 +83,27 @@
                 <!--Sobrevivientes por clases-->
                 <div class="accordion-item rounded-0">
                     <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Gráfico 4</button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Víctimas probadas y posibles</button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                         <div class="accordion-body text-black-50">
                             <p>Gráfico 4</p>
-                            <canvas id="sobreviven" width="100" height="30"></canvas>
+                            <canvas id="victimasposibles" width="100" height="30"></canvas>
                         </div>
                     </div>
                 </div>
                 <!--Mujeres y niños primero-->
                 <div class="accordion-item rounded-0">
                     <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Gráfico 5</button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Tiempo de actividad por asesino</button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                         <div class="accordion-body text-black-50">
                             <p>Gráfico 5</p>
-                            <canvas id="porsexo" width="100" height="30"></canvas>
+                            <canvas id="tiempo" width="100" height="30"></canvas>
                         </div>
                     </div>
                 </div>
-                <!--Extra-->
-                <div class="accordion-item rounded-0">
-                    <h2 class="accordion-header" id="headingSix">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseFive">Gráfico 6</button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                        <div class="accordion-body text-black-50">
-                            <p>Gráfico 6</p>
-
-                            <h5 class="mt-4 text-center">Gráfico de dispersión</h5>
-
-                            <canvas id="disperso" width="100" height="50"></canvas>
-
-                            <h5 class="mt-5 text-center">Gráfico de burbujas</h5>
-
-                            <canvas id="burbujeante" width="100" height="50"></canvas>
-
-                            <p class="small mt-5 text-muted">Otros gráficos que pueden resolver con Chart.js son los de <a href="https://www.chartjs.org/docs/latest/charts/line.html" target="_blank">línea</a>, <a href="https://www.chartjs.org/docs/latest/charts/polar.html" target="_blank">área polar</a> y <a href="https://www.chartjs.org/docs/latest/charts/radar.html" target="_blank">radar</a>. Cada gráfico puede ayudarnos a hacer evidente algo determinado. La ayuda que nos presta cada uno es su función y cada función se explica brevemente en la misma documentación de Chart.js; para explicaciones más detalladas conviene revisar <a href="https://datavizcatalogue.com/ES/buscar.html" target="_blank">Datavis Catalogue</a>.</p>
-                        </div>
-                    </div>
-                </div>
-                <!--Fin-->
             </div>
             <div class="row">
                 <div class="col-sm-10 col-md-8 col-lg-6 mx-auto">
@@ -178,17 +156,28 @@ console.log(data.Name)
                 //algunas variables para calcular
                 var nombres = [];
                 var victimas = [];
+                var victimasposibles = [];
                 var paisesunicos = {};
+                var genero = {};
+                var anos = [];
 
                 //consultando en cada elemento del arreglo
                 data.forEach((item, i) => {
                     nombres.push(item.Name);
                     victimas.push(item.provenvictims);
+                    victimasposibles.push(item.possiblevictims);
                     if (!Object.keys(paisesunicos).includes(item.Country)) {
                         paisesunicos[item.Country] = 1;
                     } else {
                         paisesunicos[item.Country] = paisesunicos[item.Country] + 1;
                     }
+                    if (!Object.keys(genero).includes(item.Gender)) {
+                        genero[item.Gender] = 1;
+                    } else {
+                        genero[item.Gender] = genero[item.Gender] + 1;
+                    }
+                    anos.push(item["Years active"].to - item["Years active"].from);
+
                 });
 
                 //y completemos un par de frase
@@ -204,8 +193,9 @@ console.log(data.Name)
               console.log(nombres)
               console.log(victimas)
               console.log(paises)
+              console.log(genero)
 
-                new Chart(document.getElementById("edadista").getContext("2d"), {
+                new Chart(document.getElementById("victimas").getContext("2d"), {
                     type: "bar",
                     data: {
                         labels: nombres,
@@ -240,13 +230,66 @@ console.log(data.Name)
                         },
                     },
                 });
-                // clases
+                // genero
 
+                new Chart(document.getElementById("genero").getContext("2d"), {
+                    type: "pie",
+                    data: {
+                        labels: Object.keys(genero),
+                        datasets: [{
+                            data: Object.values(genero),
+                            label: "Total",
+                            backgroundColor: ["#f00", "#00f"] }],
+                    },
+                    options: {
+                        animation: false,
+                        layout: {
+                            padding: 10,
+                        },
+                    },
+                });
+                //victimas posibles y probadas
 
-                //sobrevivientes y muertes por clase
+                new Chart(document.getElementById("victimasposibles").getContext("2d"), {
+                    type: "bar",
+                    data: {
+                        labels: nombres,
+                        datasets: [{
+                          data: victimas,
+                          label: "Víctimas comprobadas",
+                          backgroundColor: ["#F06EC4"],
+                    }, {
+                          data: victimasposibles,
+                          label: "Víctimas posibles",
+                          backgroundColor: ["#AB72F7"],
+                    }],
+                    options: {
+                        animation: false,
+                        layout: {
+                            padding: 10,
+                        },
+                    },
+                },
+            });
 
-
-                //sobrevivientes y muertes por edad y sexo (mujeres y niños primero)
+                //tiempo de actividad
+                new Chart(document.getElementById("tiempo").getContext("2d"), {
+                    type: "bar",
+                    data: {
+                        labels: nombres,
+                        datasets: [{
+                          data: anos,
+                          label: "Años activos por asesino",
+                          backgroundColor: ["#F06EC4", "#AB72F7", "#7396E0", "#495F8F"],
+                    }],
+                    options: {
+                        animation: false,
+                        layout: {
+                            padding: 10,
+                        },
+                    },
+                },
+            });
             ;
             }
             todo().catch((error) => console.error(error));
@@ -267,84 +310,7 @@ console.log(data.Name)
                     puntos.push(info);
                     burbujas.push(mas);
                 });
-                //console.log(burbujas);
-                //Gráfico de dispersión
-                //Para evidenciar si existe una relación o correlación entre las dos variables
-                new Chart(document.getElementById("disperso").getContext("2d"), {
-                    type: "scatter",
-                    data: {
-                        datasets: [
-                            {
-                                label: "Índice de desarrollo humano y renta per cápita",
-                                data: puntos,
-                                backgroundColor: "rgba(0,100,255,.5)",
-                                pointRadius: 5,
-                            },
-                        ],
-                    },
-                    options: {
-                        animation: false,
-                        scales: {
-                            x: {
-                                max:140000,
-                                ticks: {
-                                    callback: function (numero) {
-                                        return "€ " + numero.toLocaleString("es-CL");
-                                    }
-                                }
-                            }
-                        },
-                        plugins: {
-                            tooltip: {
-                                callbacks: {
-                                    label: (context) => {
-                                        console.log(context);
-                                        return context.raw.pais + " tiene un PIB per cápita de € " + context.raw.x.toLocaleString("es-CL");
-                                    },
-                                }
-                            },
-                        },
-                    },
-                });
-                //Gráfico de burbujas
-                //Para analizar patrones o correlaciones de dos valores, considerando un tercer valor que se presenta en su radio
-                new Chart(document.getElementById("burbujeante").getContext("2d"), {
-                    type: "bubble",
-                    data: {
-                        datasets: [
-                            {
-                                label: "Índice de desarrollo humano y renta per cápita, con población",
-                                data: burbujas,
-                                backgroundColor: "rgba(0,100,255,.5)",
-                                pointRadius: 5,
-                            },
-                        ],
-                    },
-                    options: {
-                        animation: false,
-                        scales: {
-                            x: {
-                                max:140000,
-                                ticks: {
-                                    callback: function (numero) {
-                                        return "€ " + numero.toLocaleString("es-CL");
-                                    }
-                                }
-                            }
-                        },
-                        plugins: {
-                            tooltip: {
-                                callbacks: {
-                                    label: (context) => {
-                                        console.log(context);
-                                        return context.raw.pais + " tiene un PIB per cápita de € " + context.raw.x.toLocaleString("es-CL");
-                                    },
-                                },
-                            },
-                        },
-                    },
-                });
-            }
+                           }
             otro().catch((error) => console.error(error));
         </script>
     </body>
