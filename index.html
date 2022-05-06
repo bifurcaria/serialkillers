@@ -61,7 +61,7 @@
                         <div class="accordion-body text-black-50">
                             <p>Gráfico 2</p>
                             <div class="col-md-6 mx-auto mb-3">
-                                <canvas id="sexista" width="100" height="100"></canvas>
+                                <canvas id="paises" width="100" height="100"></canvas>
                             </div>
                         </div>
                     </div>
@@ -178,12 +178,17 @@ console.log(data.Name)
                 //algunas variables para calcular
                 var nombres = [];
                 var victimas = [];
+                var paisesunicos = {};
 
                 //consultando en cada elemento del arreglo
                 data.forEach((item, i) => {
-                  nombres.push(item.Name);
-                  victimas.push(item.provenvictims)
-
+                    nombres.push(item.Name);
+                    victimas.push(item.provenvictims);
+                    if (!Object.keys(paisesunicos).includes(item.Country)) {
+                        paisesunicos[item.Country] = 1;
+                    } else {
+                        paisesunicos[item.Country] = paisesunicos[item.Country] + 1;
+                    }
                 });
 
                 //y completemos un par de frase
@@ -193,20 +198,40 @@ console.log(data.Name)
 
                 ;
 
-                //edades
+                //victimas x asesino
 
-              //para ver si funciona
+                 //para ver si funciona
               console.log(nombres)
               console.log(victimas)
+              console.log(paises)
 
                 new Chart(document.getElementById("edadista").getContext("2d"), {
                     type: "bar",
                     data: {
-                        labels: [{data: nombres}],
-                        datasets: {
+                        labels: nombres,
+                        datasets: [{
                           data: victimas,
                           label: "Asesinos y víctimas",
-                          backgroundColor: ["#F06EC4", "#AB72F7", "#7396E0", "#495F8F"] ],
+                          backgroundColor: ["#F06EC4", "#AB72F7", "#7396E0", "#495F8F"],
+                    }],
+                    options: {
+                        animation: false,
+                        layout: {
+                            padding: 10,
+                        },
+                    },
+                },
+            });
+
+                //asesinos x pais
+                new Chart(document.getElementById("paises").getContext("2d"), {
+                    type: "polarArea",
+                    data: {
+                        labels: Object.keys(paisesunicos),
+                        datasets: [{
+                            data: Object.values(paisesunicos),
+                            label: "Total",
+                            backgroundColor: ["#f00", "#00f", "#0ff"] }],
                     },
                     options: {
                         animation: false,
@@ -215,10 +240,6 @@ console.log(data.Name)
                         },
                     },
                 });
-
-                //hombres y mujeres
-
-
                 // clases
 
 
