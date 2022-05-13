@@ -12,10 +12,15 @@
             body {
                 color: white;
                 background: rgb(65, 64, 56);
-                background-size: 35% auto;
+                height:60vh;
+                background-image: url("https://raw.githubusercontent.com/bifurcaria/serialkillers/main/cuchillito.jpg");
+                background-repeat: no-repeat;
                 background-blend-mode: multiply;
+                background-size: 60%;
+                background-position: center;
+                
                 font-weight: 300;
-                font-family: "Source Serif Pro", serif;
+                font-family: "Source Sans Pro", sans-serif;
             }
 
             header, footer{
@@ -23,7 +28,7 @@
             }
 
             header.titular {
-                height: calc(30vh + 10vw);
+                height: calc(65vh + 10vw);
             }
 
             header h1 {
@@ -38,7 +43,7 @@
                 font-weight: 300;
             }
             a {
-                color: rgba(255, 255, 255, .75);
+                color: rgba(255, 0, 0, 0.75);
             }
 
             a:hover {
@@ -51,7 +56,7 @@
             }
 
             main p a {
-                text-decoration: underline;
+                text-decoration: none;
             }
 
             p.primero::first-letter {
@@ -87,7 +92,7 @@
         <header class="titular">
             <div class="container h-100">
                 <div class="row h-100">
-                    <div class="col-md-6 mx-auto text-center align-self-end">
+                    <div class="col-md-8 mx-auto text-center align-self-end">
                         <h1>Asesinos en serie</h1>
                         <h2 class="fs-6">¿Qué dicen los datos?</h2>
                         <h3 class="fs-5 mb-5">Un análisis según territorio y género.</h3>
@@ -99,17 +104,18 @@
         </header>
         <main>
             <div class="container py-5">
-                <div class="row">
-                    <div class="col-md-6 mx-auto">
+                <div class="row no-gutters">
 
-                        <p>La denominación asesino en serie o asesino serial designa a un individuo que asesina a tres o más personas, en un lapso de 30 días o más, con un período de "enfriamiento" entre cada asesinato, y cuya motivación se basa en la gratificación psicológica que le proporciona cometer dicho crimen.</p>
+                    <div class="col-md-8 mx-auto text-center align-self-end">
 
-                        <p>Los asesinos en serie «tienden a ser selectivos al acechar a sus víctimas y que lo hacen impulsados por alguna necesidad interior imperiosa».</p>
+                        <p class="small text-center">La denominación asesino en serie o asesino serial designa a un individuo que asesina a tres o más personas, en un lapso de 30 días o más, con un período de "enfriamiento" entre cada asesinato, y cuya motivación se basa en la gratificación psicológica que le proporciona cometer dicho crimen.</p>
+
+                        <p class="small text-center">Los asesinos en serie «tienden a ser selectivos al acechar a sus víctimas y que lo hacen impulsados por alguna necesidad interior imperiosa».</p>
                     
-                        <p>A causa de la horripilante naturaleza de sus crímenes, sus diversas personalidades y perfiles, y su habilidad para evadir la detección y matar a muchas víctimas antes de ser capturados y encarcelados, los asesinos en serie se han vuelto rápidamente figuras de culto, y han sido representados en muchas novelas, filmes, canciones, historietas, videojuegos, etc.</p>
+                        <p class="small text-center">A causa de la horripilante naturaleza de sus crímenes, sus diversas personalidades y perfiles, y su habilidad para evadir la detección y matar a muchas víctimas antes de ser capturados y encarcelados, los asesinos en serie se han vuelto rápidamente figuras de culto, y han sido representados en muchas novelas, filmes, canciones, historietas, videojuegos, etc.</p>
                         <br>
 
-                        <div class="col-md-6 mx-auto">
+                        <div class="col-md-8 mx-auto">
                             <div id="probandoCarrusel" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -133,39 +139,51 @@
                             </div>
                         </div>
                         <br>
-                        <p><em>Algunas representaciones de asesinos en serie en la cultura popular.</em></p>
-                        <p>Muchos expertos han afirmado que una vez que el asesino en serie comienza con sus actos delictivos no puede parar (o solo en contadas veces). Algunos sostienen la opinión de que aquellos que no son capaces de controlar sus impulsos homicidas son más fáciles de atrapar.</p>
+                        <p class="small text-center"><em>Algunas representaciones de asesinos en serie en la cultura popular.</em></p>
+                        <p class="small text-center">Muchos expertos han afirmado que una vez que el asesino en serie comienza con sus actos delictivos no puede parar (o solo en contadas veces). Algunos sostienen la opinión de que aquellos que no son capaces de controlar sus impulsos homicidas son más fáciles de atrapar.</p>
 
 
                     </div>
-                    <div class="col-md-6 mx-auto">
+                    <div class="col-md-8 mx-auto">
+                        
 
                         <canvas id="victimas" width="100" height="100"></canvas>
 
                     </div>
-                    <div class="col-md-6 mx-auto">
+                    <div class="col-md-8 mx-auto">
+                        
 
-                        <p>El fenómeno de los asesinatos en serie en los Estados Unidos fue especialmente prominente entre 1970 y 2000, que se ha descrito como la "edad de oro de los asesinatos en serie".</p>
+                        <br><p class="small text-center">El fenómeno de los asesinatos en serie en los Estados Unidos fue especialmente prominente entre 1970 y 2000, que se ha descrito como la "edad de oro de los asesinatos en serie".</p>
 
-                        <p>El número de asesinos en serie activos en el país alcanzó su punto máximo en 1989 y ha tenido una tendencia constante a la baja desde entonces. La causa de este aumento en los asesinatos en serie se ha atribuido a la urbanización, que acercaba a las personas y ofrecía el anonimato.</em></p>
+                        <p class="small text-center">El número de asesinos en serie activos en el país alcanzó su punto máximo en 1989 y ha tenido una tendencia constante a la baja desde entonces. La causa de este aumento en los asesinatos en serie se ha atribuido a la urbanización, que acercaba a las personas y ofrecía el anonimato.</em></p>
 
-                        <p>Esto podría explicar que la gran mayoría de asesinos seriales de los que se tiene registro hayan operado en países con grandes ciudades, como EEUU o la extinta URSS.</p>
+                        <p class="small text-center">Esto podría explicar que la gran mayoría de asesinos seriales de los que se tiene registro hayan operado en países con grandes ciudades, como EEUU o la extinta URSS.</p>
 
                         <canvas id="paises" width="100" height="100"></canvas>
 
                     </div>
 
-                    <div class="col-md-6 mx-auto">
+                    <div class="col-md-8 mx-auto">
 
-                        <p>Se han propuesto teorías de por qué ciertas personas cometen asesinatos en serie. Algunos teóricos creen que las razones son biológicas, lo que sugiere que los asesinos en serie nacen, no se hacen, y que su comportamiento violento es el resultado de una actividad cerebral anormal.</p>
-                        <p>Otra teoría, la del FIS (por sus siglas en inglés: Fractured Identity Syndrome) sugiere que un evento social, o una serie de eventos, durante la infancia da como resultado una fractura de la personalidad del asesino en serie. El término "fractura" se define como una pequeña ruptura de la personalidad que a menudo no es visible para el mundo exterior y solo la siente el asesino.</p>
+                        <p class="small text-center">Se han propuesto teorías de por qué ciertas personas cometen asesinatos en serie. Algunos teóricos creen que las razones son biológicas, lo que sugiere que los asesinos en serie nacen, no se hacen, y que su comportamiento violento es el resultado de una actividad cerebral anormal.</p>
+                        <p class="small text-center">Otra teoría, la del FIS (por sus siglas en inglés: Fractured Identity Syndrome) sugiere que un evento social, o una serie de eventos, durante la infancia da como resultado una fractura de la personalidad del asesino en serie. El término "fractura" se define como una pequeña ruptura de la personalidad que a menudo no es visible para el mundo exterior y solo la siente el asesino.</p>
                         
                         <canvas id="genero" width="100" height="100"></canvas>
                         
-                        <p>También se ha sugerido la "teoría del proceso social" como explicación del asesinato en serie. La conducta delictiva es un proceso de interacción con las instituciones sociales, en el que todos tienen el potencial para la conducta delictiva.</p>
-                        <p>Independiente de cuál sea el motivo, resulta importante considerar que hay diferencias por país y género. Esto sugiere que las causas no son puramente biológicas, por lo que las instituciones y la comunidad tendrían un rol fundamental en este fenómeno.</p>
+                        <p class="small text-center">También se ha sugerido la "teoría del proceso social" como explicación del asesinato en serie. La conducta delictiva es un proceso de interacción con las instituciones sociales, en el que todos tienen el potencial para la conducta delictiva.</p>
+                        <p class="small text-center">Independiente de cuál sea el motivo, resulta importante considerar que hay diferencias por país y género. Esto sugiere que las causas no son puramente biológicas, por lo que las instituciones y la comunidad tendrían un rol fundamental en este fenómeno.</p>
 
-                        <p class="small my-5">Este párrafo más pequeño debería entregar información adicional: Que se trata de un trabajo para el electivo de <a href="https://github.com/profesorfaco/front-end">Introducción al Desarrollo Front End con HTML, CSS y JavaScript</a>; que el trabajo está "inspirado" en <a href="https://graphics.reuters.com/TONGA-VOLCANO/LIGHTNING/zgpomjdbypd/">Analysing the volcanic lightning from the Tonga eruption</a>, que originalmente fue desarrollado para <a href="https://graphics.reuters.com/">Reuters Graphics</a> por Manas Sharma y Simon Scarr; que el trabajo se resuelve con <a href="https://getbootstrap.com/">Bootstrap</a> y <a href="https://www.chartjs.org/">Charts.js</a>, además de consultas a un <a href="https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto5/TotalesNacionales.csv">CSV</a> y un <a href="https://digimon-api.vercel.app/api/digimon">JSON</a>; etc.</p>
+                    </main>
+            
+                    <aside>
+                        <div class="container">
+                            <div class="row py-5">
+                                <div class="col-sm-10 col-md-8 col-lg-6 mx-auto small text-center">
+                                    <p>Los datos extraídos de Wikipedia fueron transformados a csv usando <a href="https://wikitable2csv.ggor.de">wikiTable2csv.</a></p>
+                                
+                                    <p>
+                                        Fuente: <a href="https://en.wikipedia.org/wiki/List_of_serial_killers_by_number_of_victims">List of serial killers by number of victims.</a>
+                                    </p>
 
                     </div>
                 </div>
@@ -232,9 +250,20 @@ console.log(data.Name)
                             backgroundColor: ["#abc4ab", "#a39171"] }],
                     },
                     options: {
-                        animation: false,
+                
+                        plugins: { 
+                        legend: {
+                            labels: {
+                            color: "white", 
+                            font: {
+                                size: 11
+                            }
+                            }
+                        }
+                        },
+
                         layout: {
-                            padding: 50,
+                            padding: {top:150, right: 20, bottom: 150, left:20}
                         },
                     },
                 });
@@ -250,10 +279,22 @@ console.log(data.Name)
                           label: "Asesinos y víctimas",
                           backgroundColor: ["#abc4ab", "#a39171", "#dcc9b6", "#727d71", "#6d4c3d"],
                     }],
+
                     options: {
-                        animation: false,
+
+                    plugins: { 
+                        legend: {
+                            labels: {
+                            color: "white", 
+                            font: {
+                                size: 11
+                            }
+                            }
+                        }
+                        },
+                    
                         layout: {
-                            padding: 50,
+                            padding: {top:150, right: 20, bottom: 150, left:20}
                         },
                     },
                 },
@@ -268,11 +309,24 @@ console.log(data.Name)
                             data: Object.values(paisesunicos),
                             label: "Total",
                             backgroundColor: ["#abc4ab", "#a39171", "#dcc9b6", "#727d71", "#6d4c3d"] }],
+                            borderWidth: 1
                     },
                     options: {
-                        animation: false,
+                       
+    
+                        plugins: { 
+                        legend: {
+                            labels: {
+                            color: "white", 
+                            font: {
+                                size: 11
+                            }
+                            }
+                        }
+                        },
+
                         layout: {
-                            padding: 10,
+                            padding: {top:100, right: 20, bottom: 100, left:20}
                         },
                     },
                 });
